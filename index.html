@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- js -> swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <title>Ardoptics</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="menu-bar" class="fa-solid fa-bars"></div>
+
+        <div class="logo">
+            <a href="#">
+                <img src="images/header/logo.png" alt="logo">
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Certificate</a></li>
+                <li><a href="#">Exhibitions</a></li>
+
+                <li class="dropdown">
+                    <a href="#">
+                        <span>Products</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+
+                    <ul class="submenu">
+                        <li><a href="#">Precision Optical Windows for Lasers</a></li>
+                        <li><a href="#">Large Size Optics</a></li>
+
+                        <li class="dropdown">
+                            <a href="#">
+                                <span>Complex Shaped Sapphire and Glass Products</span>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+
+                            <ul class="submenu">
+                                <li><a href="#">Cones and Truncated Cones</a></li>
+                                <li><a href="#">Pyramids and Truncated Pyramids</a></li>
+                                <li><a href="#">Stepped Windows</a></li>
+                                <li><a href="#">Prisms</a></li>
+                                <li><a href="#">Wedges</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" class="dropdown_link">Tubes</a></li>
+                        <li><a href="#" class="dropdown_link">Light Guides</a></li>
+                        <li><a href="#" class="dropdown_link">Sapphire Blanks of Various Shapes</a></li>
+
+                        <li class="dropdown">
+                            <a href="#">
+                                <span>Complex Shaped Sapphire and Glass Products</span>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+
+                            <ul class="submenu">
+                                <li><a href="#">Cones and Truncated Cones</a></li>
+                                <li><a href="#">Pyramids and Truncated Pyramids</a></li>
+                                <li><a href="#">Stepped Windows</a></li>
+                                <li><a href="#">Prisms</a></li>
+                                <li><a href="#">Wedges</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" class="dropdown_link">Laser Elements from YAG</a></li>
+                        <li><a href="#" class="dropdown_link">Domes</a></li>
+                        <li><a href="#" class="dropdown_link">Spherical Optics</a></li>
+                        <li><a href="#" class="dropdown_link">Reflectors and Monoblocks</a></li>
+                        <li><a href="#" class="dropdown_link">High-Pressure Sensors</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">
+                        <span>Materials</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+
+                    <ul class="submenu">
+                        <li><a href="#">Sapphire</a></li>
+                        <li><a href="#">Quartz Glass (KU-1)</a></li>
+                        <li><a href="#">Quartz Glass (KI)</a></li>
+                        <li><a href="#">Glass K8</a></li>
+                        <li><a href="#">YAG</a></li>
+                        <li><a href="#">Passive Glasses Laser Cavity Materials</a></li>
+                        <li><a href="#">Fused Silica Cerium Doped</a></li>
+                        <li><a href="#">Doped Quartz Glass</a></li>
+                        <li><a href="#">Silicon (Si)</a></li>
+                        <li><a href="#">Germanium (Ge)</a></li>
+                    </ul>
+                </li>
+
+                <li class="li"><a href="#" class="link">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fa-solid fa-search" id="search-btn"></a>
+
+            <div class="select-lang">
+                <div class="fa-solid fa-globe" id="globe-icon"></div>
+
+                <div class="options">
+                    <a href="#" class="option" data-value="en">
+                        <img src="images/header/ru.png" alt="Russian" title="Русский">
+                    </a>
+
+                    <a href="#" class="option" data-value="ru">
+                        <img src="images/header/en.png" alt="English" title="English">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <form class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <div class="swiper mySwiper homeSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/home-slider/slide1.jpg" alt="slide-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/home-slider/slide2.jpg" alt="slide-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/home-slider/slide3.jpg" alt="slide-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/home-slider/slide4.jpg" alt="slide-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/home-slider/slide5.jpg" alt="slide-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/home-slider/slide6.jpg" alt="slide-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/home-slider/slide7.jpg" alt="slide-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/home-slider/slide8.jpg" alt="slide-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/home-slider/slide9.jpg" alt="slide-img">
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2 class="title">
+                Product List
+                <div class="line"></div>
+            </h2>
+
+            <div class="product-list">
+                <div class="product">
+                    <img src="images/products-slider/p-slide1.jpg" alt="product-slide">
+                    <h3>Sapphire and glass lightguides</h3>
+                </div>
+
+                <div class="product">
+                    <img src="images/products-slider/p-slide2.jpg" alt="product-slide">
+                    <h3>Spherical optics</h3>
+                </div>
+
+                <div class="product">
+                    <img src="images/products-slider/p-slide3.jpg" alt="product-slide">
+                    <h3>Domes</h3>
+                </div>
+
+                <div class="product">
+                    <img src="images/products-slider/p-slide4.jpg" alt="product-slide">
+                    <h3>Sapphire blanks of different configuration</h3>
+                </div>
+
+                <div class="product">
+                    <img src="images/products-slider/p-slide5.jpg" alt="product-slide">
+                    <h3>Reflectors and flow tubes</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="title">
+                About us
+                <div class="line"></div>
+            </h2>
+
+            <div class="content">
+                <p class="descr">
+                    The optical production of Ard-Optics is represented by a workshop with sites and equipment of
+                    national and foreign brands, which ensures the manufacture of mass and unique optics, ranging from
+                    blanks to complex configurations of products.
+                </p>
+
+                <p class="descr">
+                    Ard-Optics specializes in the manufacture of precision optical components using a variety of
+                    materials, including leucosapphire (Al2O3) and quartz glass.
+                </p>
+
+                <p class="descr">
+                    Currently, the shareholders of the company are: Mr. Ruben Babasyan and Impex HighTech GmbH.
+                </p>
+
+                <a href="#" class="btn">
+                    More
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="exibitions">
+        <div class="container">
+            <h2 class="title">
+                Exhibitions
+                <div class="line"></div>
+            </h2>
+
+            <div class="content">
+
+                <a href="#">
+                    <div class="image">
+                        <img src="images/exibitions/img1.jpg" alt="exibitions">
+                    </div>
+
+                    <div class="info">
+                        <span class="sub_title">World of Lasers and Optics 2022</span>
+                        <span class="descr">Moscow, Russia 30 March – 2 April 2022 Forum Pavilion Booth FD003</span>
+                    </div>
+                </a>
+
+
+                <a href="#">
+                    <div class="image">
+                        <img src="images/exibitions/img2.jpg" alt="exibitions">
+                    </div>
+
+                    <div class="info">
+                        <span class="sub_title">Photonica-2017</span>
+                        <span class="descr">17th International Exhibition Moscow, Feruary 28 - March 2</span>
+                    </div>
+                </a>
+
+
+                <a href="#">
+                    <div class="image">
+                        <img src="images/exibitions/img3.jpg" alt="exibitions">
+                    </div>
+
+                    <div class="info">
+                        <span class="sub_title">Made in Armenia 2016</span>
+                        <span class="descr">At «Meridian» Jewelry Free Economic Zone Yerevan, September 15-17</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="btn_content">
+                <a href="#" class="btn">
+                    More
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+    </section>
+
+    <section class="customers">
+        <div class="container">
+            <h2 class="title">
+                Our Customers
+                <div class="line"></div>
+            </h2>
+        </div>
+
+        <div class="customer-list">
+            <div class="swiper-container customer-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/customers/img1.jpg" alt="img1"></div>
+                    <div class="swiper-slide"><img src="images/customers/img2.jpg" alt="img1"></div>
+                    <div class="swiper-slide"><img src="images/customers/img3.jpg" alt="img1"></div>
+                    <div class="swiper-slide"><img src="images/customers/img4.jpg" alt="img1"></div>
+                    <div class="swiper-slide"><img src="images/customers/img5.jpg" alt="img1"></div>
+                    <div class="swiper-slide"><img src="images/customers/img6.jpg" alt="img1"></div>
+                    <div class="swiper-slide"><img src="images/customers/img7.png" alt="img1"></div>
+                    <div class="swiper-slide"><img src="images/customers/img8.jpg" alt="img1"></div>
+                    <div class="swiper-slide"><img src="images/customers/img9.jpg" alt="img1"></div>
+                    <div class="swiper-slide"><img src="images/customers/img10.jpg" alt="img1"></div>
+                    <div class="swiper-slide"><img src="images/customers/img11.jpg" alt="img1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="title">
+                Contact Us
+                <div class="line"></div>
+            </h2>
+
+            <div class="social-links">
+                <a href="https://maps.app.goo.gl/xTgoiwqpT24FQvLa8" target="_blank">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="sub_title">Visit Our Company at.</span>
+                    <span class="descr">Address: 24/16 Azatutyan Ave. <br> Yerevan 0014 Armenia</span>
+                </a>
+
+                <a href="tel:(+37410) 20 84 50">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="sub_title">Have a Questions? Call us</span>
+                    <span class="descr">Tel./Fax: <br> (+37410) 20 84 50</span>
+                </a>
+
+                <a href="mailto:example@mail.ru">
+                    <i class="fa-solid fa-comment"></i>
+                    <span class="sub_title">Send us a Message</span>
+                    <span class="descr">Email: <br> example@mail.ru</span>
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100064317960821#" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span class="sub_title">Find us on Facebook</span>
+                    <span class="descr">Facebook: <br> @example</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h4 class="heading">An Impex HighTech GmbH</h4>
+
+            <div class="info_div">
+                <p>ARD-Optics 2009-2024. All rights reserved. </p>
+                <p>Development by
+                    <a target="_blank" href="https://www.linkedin.com/in/hayk-abelyan-22a511129/">Hayk Abelyan</a>
+                </p>
+            </div>
+
+            <div class="opasity01">
+                <div class="opasity02">
+                    <div class="opasity03"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
