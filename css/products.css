@@ -1,0 +1,71 @@
+
+@import './common.css';
+@import './header.css';
+@import './footer.css';
+
+#products {
+  margin-top: 100px;
+}
+
+#products li{
+    padding: 10px;
+}
+
+#products li a{
+    font-size: 16px;
+    color: var(--darck);
+
+}
+
+#products li a:hover{
+    color: rgb(0, 183, 255);
+}
+
+
+#products .sub_products li{
+    margin-left:20px;
+}
+
+
+
+/* _____________________________________________ */
+
+
+
+@media (max-width: 1150px) {
+
+    #products {
+      padding: 15rem 0 5rem 10%;
+    }
+  }
+
+
+  
+@media (max-width: 770px) {
+
+    #products {
+      padding: 10rem 0 5rem 10%;
+    }
+
+    #products li{
+        padding: 5px;
+    }
+    
+  }
+  
+  @media (max-width: 500px) {
+
+    #products li{
+        padding: 2px;
+    }
+    
+  }
+
+    
+  @media (max-width: 500px) {
+
+    #products li a{
+        font-size: 14px;
+    }
+    
+  }

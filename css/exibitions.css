@@ -1,0 +1,265 @@
+@import url("common.css");
+@import './header.css';
+@import './footer.css';
+
+
+/* ______________________________________________________________ */
+.exibition{
+  margin-top: 120px;
+}
+
+.exibition .container .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  /* flex-wrap: wrap; */
+}
+
+.exibition .container .box .img_div {
+  width: 400px;
+  height: 180px;
+}
+
+.exibition .container .box .img_div.west {
+  width: 400px;
+  height: 60px;
+  margin: 30px 0;
+}
+
+.exibition .container .box .img_div.optatec {
+  width: 200px;
+  height: 180px;
+}
+
+.exibition .container .box .img_div img {
+  width: 100%;
+  height: 100%;
+}
+
+.exibition .container .box .content {
+  flex: 30rem;
+}
+
+.exibition .container .box .content p {
+  font-size: 17px;
+  color: rgb(7, 53, 84);
+  padding: 10px;
+  line-height: 1.4;
+}
+
+.exibition .container .box .img_div.images img {
+  display: block;
+  width: 300px;
+  height: 200px;
+}
+
+.exibition .container .box .img_div.images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 60%;
+}
+
+.exibition .container .box .img_div.images.last_two img {
+  display: block;
+  width: 220px;
+  height: 200px;
+}
+
+/* _______________________________________ */
+
+#exhibition_main_div_left {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 20%;
+  height: 400vh;
+  background: var(--main_darck);
+  rotate: 3deg;
+  left: -20%;
+}
+
+#exhibition_main_div_left .op01 {
+  width: 100%;
+  height: 140vh;
+  background: rgba(35, 117, 171, 0.214);
+  position: absolute;
+  top: 15%;
+  rotate: 3deg;
+  left: 9%;
+}
+
+#exhibition_main_div_left .op02 {
+  width: 100%;
+  height: 140vh;
+  background: rgba(35, 117, 171, 0.214);
+  position: absolute;
+  top: 5%;
+  rotate: 1deg;
+  left: -14%;
+}
+
+#exhibition_main_div_left .op03 {
+  width: 100%;
+  height: 140vh;
+  background: rgba(53, 126, 175, 0.252);
+  position: absolute;
+  top: 50%;
+  rotate: 169deg;
+  left: 30%;
+}
+
+#exhibition_main_div_left .op04 {
+  background: rgba(114, 176, 218, 0.252);
+  width: 100%;
+  height: 140vh;
+  position: absolute;
+  top: 60%;
+  rotate: 171deg;
+  left: 30%;
+}
+
+/* _________________________________________________ */
+
+@media (max-width: 1250px) {
+  .exibition .container .box .img_div.images {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1150px) {
+
+  .exibition {
+    padding: 15rem 0 5rem 10%;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .exibition .container .box .img_div.west {
+    height: 60px;
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .exibition .container .box.west_box {
+    flex-wrap: wrap;
+  }
+
+  .exibition .container .box.west_box .content {
+    flex: 60rem;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  .exibition .container .box {
+    flex-wrap: wrap;
+  }
+
+  .exibition .container .box .content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .exibition .container .box .img_div {
+    width: 80%;
+    height: 230px;
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 770px) {
+
+  .exibition {
+    padding: 10rem 0 5rem 10%;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .exibition .container .box .img_div.images {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .exibition .main_div_left {
+    display: none;
+  }
+
+  .exibition .container .box .content p {
+    line-height: 1.1;
+  }
+
+  .exibition .container .box .img_div.west {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .exibition .heading {
+    font-size: 22px;
+  }
+
+  .exibition .secondary_heading {
+    font-size: 17px;
+  }
+
+  .exibition p {
+    margin: 10px 0;
+    line-height: 1.4;
+    font-size: 13px;
+  }
+
+  .exibition .container .box .img_div {
+    width: 80%;
+    height: 180px;
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 550px) {
+
+  .exibition section {
+    padding: 5%;
+  }
+
+  .exibition {
+    padding: 10rem 0 5rem 10%;
+  }
+  .exibition .heading {
+    font-size: 25px;
+  }
+
+  .exibition .secondary_heading {
+    font-size: 19px;
+  }
+
+  .exibition .container .box .content p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 470px) {
+
+  #exhibition_main_div_left {
+    display: none;
+  }
+
+  .exibition {
+    padding: 10rem 2rem 2rem;
+  }
+
+  .exibition .heading {
+    font-size: 21px;
+  }
+}

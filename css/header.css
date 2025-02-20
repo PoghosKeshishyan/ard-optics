@@ -1,0 +1,412 @@
+/* _______________________ header _______________________ */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 .3rem .5rem gray;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+header #menu-bar {
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 4px 8px;
+  color: #32374e;
+  display: none;
+}
+
+header .logo a img {
+  width: 150px;
+}
+
+
+/* _______________________ header > navbar _______________________ */
+header .navbar ul {
+  display: flex;
+  gap: 25px;
+}
+
+header .navbar ul li {
+  position: relative;
+}
+
+header .navbar ul li a {
+  font-size: 18px;
+  color: #000;
+}
+
+header .navbar ul li a:hover {
+  text-shadow: 0 0 2px gray;
+}
+
+header .navbar ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+header .navbar ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+header .navbar .dropdown a .fa-plus {
+  display: none;
+}
+
+header .navbar .dropdown .submenu {
+  position: absolute;
+  z-index: 1001;
+  top: 120%;
+  left: 0;
+  background: #333;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 15px 0;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  pointer-events: none;
+  transition: visibility 0s linear 0.6s, opacity 0.6s ease;
+  opacity: 0;
+}
+
+header .navbar .dropdown:hover>.submenu {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+header .navbar .submenu li {
+  width: 100%;
+}
+
+header .navbar .submenu li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+header .navbar .submenu li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+header .navbar .dropdown .submenu .dropdown {
+  position: relative;
+}
+
+header .navbar .dropdown .submenu .dropdown .submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #444;
+  width: 200px;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: visibility 0s linear 0.6s, opacity 0.6s ease;
+}
+
+header .navbar .submenu .dropdown:hover>.submenu {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+
+/* _______________________ header > icons _______________________ */
+
+header .icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .icons a img {
+  width: 25px;
+  height: 20px;
+}
+
+header .icons .fa-globe,
+header .icons .fa-search {
+  color: #000;
+
+  &:hover {
+    text-shadow: 0 0 2px gray;
+  }
+}
+
+header .icons a.fa-search {
+  font-size: 20px;
+  width: 25px;
+  text-align: center;
+}
+
+/* _______________________ header > icons > languages _______________________ */
+
+.select-lang {
+  position: relative;
+  width: 30px;
+}
+
+.select-lang #globe-icon {
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.select-lang .options {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  z-index: 1000;
+  transform: translateX(-15%);
+  border: 1px solid #0c0e16;
+  background: #fff;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.select-lang:hover .options {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.select-lang .option {
+  display: flex;
+  padding: 2px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.select-lang .option img {
+  width: 100%;
+  height: 100%;
+}
+
+.select-lang .options a:hover {
+  background-color: #bfc0c5;
+}
+
+/* ________________ header > icons > search-bar-container ________________ */
+
+header .search-bar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  box-shadow: .3rem 0rem .5rem gray inset;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: .7rem 1rem;
+  text-transform: none;
+  font-size: 1.3rem;
+  border-radius: .4rem;
+  border: 2px solid #9da0ae;
+  outline-color: #2C3972;
+}
+
+header .search-bar-container label {
+  color: #2C3972;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+}
+
+
+
+
+/* ___________________ media queries _________________________ */
+
+@media (max-width: 1200px) {
+  header {
+    padding: 15px 1%;
+  }
+}
+
+
+@media (max-width: 1150px) {
+  header {
+    flex-direction: column;
+  }
+
+  header .navbar {
+    margin: 10px;
+  }
+}
+
+
+@media (max-width: 880px) {
+  header .navbar ul {
+    gap: 15px;
+  }
+
+  header .navbar a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    padding: 15px 3rem;
+  }
+
+  header #menu-bar {
+    display: initial;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    height: 500px;
+    background: none;
+    overflow-y: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    &::-webkit-scrollbar {
+      width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #cccbcb;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #2C3972;
+      border-radius: 15px;
+    }
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar ul {
+    display: block;
+  }
+
+  header .navbar ul li a {
+    width: 100%;
+    text-shadow: 2px 2px 20px gray;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  header .navbar ul li a::after {
+    content: "";
+    background: none;
+    box-shadow: none;
+  }
+
+  header .navbar ul li a:hover {
+    background: #ddd;
+  }
+
+  header .navbar .dropdown a .fa-plus {
+    display: initial;
+  }
+
+  header .navbar .dropdown a .fa-angle-down,
+  header .navbar .dropdown a .fa-angle-right {
+    display: none;
+  }
+
+  header .navbar .dropdown .submenu {
+    position: static;
+    opacity: 0;
+    width: 100%;
+    transition: .5s linear;
+    padding: 0;
+    display: none;
+  }
+
+  header .navbar .dropdown:hover>.submenu {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  header .navbar .dropdown .submenu.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  header .navbar .dropdown .submenu a {
+    width: 100%;
+    text-shadow: 2px 2px 20px gray;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    background: #efeded;
+  }
+
+  header .navbar .dropdown .submenu a:hover {
+    background: #ddd;
+  }
+
+  header .navbar .dropdown .submenu .dropdown .submenu {
+    position: static;
+    visibility: visible;
+    opacity: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  header .navbar .dropdown .submenu .dropdown .submenu.active {
+    opacity: 1;
+  }
+
+  header .navbar .dropdown .submenu .dropdown .submenu a {
+    background: #bdb9b9;
+  }
+}

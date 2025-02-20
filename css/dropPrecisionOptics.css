@@ -1,0 +1,162 @@
+
+@import './common.css';
+@import './header.css';
+@import './footer.css';
+
+/* _____________________________________________________________ */
+#dropPrecisionOptics{
+  padding: 120px 0;
+}
+
+#dropPrecisionOptics p{
+  font-size: 18px;
+  padding: 20px 0;
+  color: var(--darck);
+} 
+
+
+ #dropPrecisionOptics .desc_image .desc_image_img{
+display: block;
+width: 70%;
+margin: auto;
+}
+
+#dropPrecisionOptics .materials{
+padding-top: 50px;
+}
+ #dropPrecisionOptics .materials_container{
+flex-wrap: wrap;
+gap: 40px;
+}
+
+
+#dropPrecisionOptics .materials_container .images_div{
+  flex: 30rem;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 .5rem 1rem gray;
+}
+
+#dropPrecisionOptics .materials_container .images_div img{
+width: 100%;height: 100%;
+}
+
+#dropPrecisionOptics .materials_container .images_div:hover{
+  transform: scale(1.1);
+}
+
+
+
+/* ______________________________________________________ */
+
+#precisionOptics_main_div_left{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 20%;
+    height: 300vh;
+    background: var(--main_darck);
+    rotate: 3deg;
+    left: -19%;
+  }
+  
+  
+  #precisionOptics_main_div_left .op01{
+    width: 100%;
+    height: 140vh;
+    background: rgba(35, 117, 171, 0.214);
+    position: absolute;
+    top: 15%;
+    rotate: 3deg;
+    left: 9%;
+  }
+  
+  #precisionOptics_main_div_left .op02{
+    width: 100%;
+    height: 140vh;
+    background: rgba(35, 117, 171, 0.214);
+    position: absolute;
+    top: 5%;
+    rotate: 1deg;
+    left: -14%;
+  
+  }
+  
+  #precisionOptics_main_div_left .op03{
+    width: 100%;
+    height: 120vh;
+    background: rgba(53, 126, 175, 0.252);
+    position: absolute;
+    top: 50%;
+    rotate: 169deg;
+    left: 24%;
+  
+  }
+  
+  
+  #precisionOptics_main_div_left .op04{
+    background: rgba(114, 176, 218, 0.252);
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    top: 60%;
+    rotate: 171deg;
+    left: 22%;
+  }
+  
+  /* ____________________________________________________________________ */
+
+
+
+@media (max-width:1150px) {
+  #dropPrecisionOptics .desc_image .desc_image_img {
+    width: 80%;
+  }
+}
+
+
+@media (max-width:1000px) {
+  #dropPrecisionOptics .desc_image .desc_image_img {
+    width: 90%;
+  }
+
+  #dropPrecisionOptics p {
+    padding: 10px 0;
+  }
+}
+
+
+
+@media (max-width: 550px) {
+
+
+  #dropPrecisionOptics {
+    padding: 10rem 0 5rem 10%;
+  }
+
+  #dropPrecisionOptics p {
+    line-height: 1.4;
+    font-size: 15px;
+  }
+  #dropPrecisionOptics .desc_image .desc_image_img {
+    width:100%;
+  
+  }
+}
+
+
+@media (max-width: 470px) {
+
+  #precisionOptics_main_div_left {
+    display: none;
+  }
+
+  #dropPrecisionOptics {
+    padding: 10rem 2rem 2rem;
+  }
+
+  section .heading {
+    font-size: 21px;
+  }
+}

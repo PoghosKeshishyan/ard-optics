@@ -1,0 +1,28 @@
+@import './common.css';
+@import './header.css';
+@import './footer.css';
+
+
+#certificate {
+  margin-top: 100px;
+}
+
+#certificate h2 {
+  margin-bottom: 20px;
+}
+
+#certificate .pdf-file {
+  margin: auto;
+  text-align: center;
+}
+
+#certificate .pdf-file iframe {
+  max-width: 600px;
+  width: 95%;
+}
+
+@media (max-width: 1280px) {
+  section  {
+    padding: 0 !important;
+  }
+}

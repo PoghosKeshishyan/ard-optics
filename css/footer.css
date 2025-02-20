@@ -1,0 +1,141 @@
+/* _______________________ footer _______________________ */
+
+.flex_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#main_div_left{
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 20%;
+  height: 400vh;
+  background: rgb(5, 69, 112);
+  rotate: 3deg;
+  left: -20%;
+}
+
+
+#main_div_left .op01{
+  width: 100%;
+  height: 140vh;
+  background: rgba(35, 117, 171, 0.214);
+  position: absolute;
+  top: 15%;
+  rotate: 3deg;
+  left: 9%;
+}
+
+#main_div_left .op02{
+  width: 100%;
+  height: 140vh;
+  background: rgba(35, 117, 171, 0.214);
+  position: absolute;
+  top: 5%;
+  rotate: 1deg;
+  left: -14%;
+
+}
+
+#main_div_left .op03{
+  width: 100%;
+  height: 140vh;
+  background: rgba(53, 126, 175, 0.252);
+  position: absolute;
+  top: 50%;
+  rotate: 169deg;
+  left: 30%;
+
+}
+
+
+#main_div_left .op04{
+  background: rgba(114, 176, 218, 0.252);
+  width: 100%;
+  height: 140vh;
+  position: absolute;
+  top: 60%;
+  rotate: 171deg;
+  left: 30%;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: rgb(5, 69, 112);
+  position: relative;
+  overflow: hidden;
+}
+
+footer .heading {
+  position: absolute;
+  max-width: 1300px;
+  width: 80%;
+  left: 50%;
+  translate: calc(-50%);
+  color: white;
+  font-size: 25px;
+  z-index: 900;
+  padding-top: 18px;
+  cursor: pointer;
+}
+
+.opasity01 {
+  width: 120%;
+  height: 200px;
+  background: rgb(15, 85, 132);
+  position: absolute;
+  top: 25%;
+  rotate: -3deg;
+  left: -5%;
+}
+
+.opasity02 {
+  width: 120%;
+  height: 300px;
+  background: rgba(35, 117, 171, 0.214);
+  position: absolute;
+  top: 17%;
+  rotate: -2deg;
+  left: -5%;
+}
+
+.opasity03 {
+  width: 120%;
+  height: 300px;
+  background: rgba(53, 126, 175, 0.252);
+  position: absolute;
+  top: 13%;
+  rotate: -2deg;
+  left: -5%;
+}
+
+
+.info_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  max-width: 1300px;
+  width: 80%;
+  z-index: 1000;
+  left: 50%;
+  translate: calc(-50%);
+  bottom: 20px;
+  color: white;
+}
+
+.info_div p a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+}

@@ -1,0 +1,127 @@
+
+@import './common.css';
+@import './header.css';
+@import './footer.css';
+#subdropcones{margin-top: 120px;}
+#subdropcones p{
+    font-size: 18px;
+    padding: 20px 0;
+    color: var(--darck);
+  } 
+  
+  
+#subdropcones .desc_image .desc_image_img{
+  display: block;
+  width: 70%;
+  margin: auto;
+  }
+  
+  #subdropcones .materials{
+  padding: 100px 0 0;
+  }
+
+#subdropcones .materials_container{
+  flex-wrap: wrap;
+  gap: 40px;
+  }
+  
+  
+  #subdropcones .materials_container .images_div{
+    flex: 25rem;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 .5rem 1rem gray;
+  }
+  
+  #subdropcones .materials_container .images_div img{
+  width: 100%;height: 100%;
+  }
+  
+  #subdropcones .materials_container .images_div:hover{
+    transform: scale(1.1);
+  }
+  
+  
+/* __________________________________ */
+
+
+@media (max-width:700px) {
+
+    p{
+        margin: 10px 0;
+        line-height: 1.6;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    
+    .secondary_heading{
+        font-size: 19px;
+    }
+
+    p{
+        margin: 10px 0;
+        line-height: 1.6;
+        font-size: 14px;
+    }
+}
+
+
+
+#subdropcones_main_div_left{
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background: var(--main_darck);
+  rotate: 10deg;
+  left: -19%;
+}
+
+
+#subdropcones_main_div_left .op01{
+  width: 100%;
+  height: 100vh;
+  background: rgba(35, 117, 171, 0.214);
+  position: absolute;
+  top: 15%;
+  rotate: 3deg;
+  left: 9%;
+}
+
+#subdropcones_main_div_left .op02{
+  width: 100%;
+  height: 100vh;
+  background: rgba(35, 117, 171, 0.214);
+  position: absolute;
+  top: 5%;
+  rotate: 1deg;
+  left: -14%;
+
+}
+
+#subdropcones_main_div_left .op03{
+  width: 100%;
+  height: 80vh;
+  background: rgba(53, 126, 175, 0.252);
+  position: absolute;
+  top: 50%;
+  rotate: 155deg;
+  left: 17%;
+
+}
+
+
+#subdropcones_main_div_left .op04{
+  background: rgba(114, 176, 218, 0.252);
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 60%;
+  rotate: 155deg;
+  left: 17%;
+}
+
+

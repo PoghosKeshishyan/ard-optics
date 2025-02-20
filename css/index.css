@@ -1,0 +1,333 @@
+@import './common.css';
+@import './header.css';
+@import './footer.css';
+
+/* ________________ home > section ________________ */
+
+.home {
+  margin-top: 85px;
+}
+
+.home .swiper {
+  width: 100%;
+  height: 580px;
+}
+
+.home .swiper .swiper-slide {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.home .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home .swiper .swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.home .swiper .swiper-pagination-bullet {
+  background-color: #f2e4e4 !important;
+}
+
+.home .swiper .swiper-button-next,
+.home .swiper .swiper-button-prev {
+  color: #fff !important;
+}
+
+.home .swiper .swiper-button-next::after,
+.home .swiper .swiper-button-prev::after {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) !important;
+}
+
+
+
+/* ========================== section > products ========================== */
+
+.products .product-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.products .product-list .product {
+  flex: 200px;
+  height: 190px;
+  overflow: hidden;
+  box-shadow: 0 .5rem 1rem gray;
+  border-radius: 10px;
+  position: relative;
+}
+
+.products .product-list .product img {
+  width: 100%;
+  height: 100%;
+}
+
+.products .product-list .product h3 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  padding: 5px 15px;
+  color: #fff;
+  font-style: italic;
+}
+
+
+/* ========================== section > about ========================== */
+.about {
+  background-image: url("../images/about/about-us.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  text-shadow: .2rem .2rem .3rem #000;
+  padding: 40px 0;
+}
+
+.about .title {
+  background: none;
+  padding: 0;
+}
+
+.about .content {
+  text-align: end;
+}
+
+.about .content .descr {
+  font-size: 20px;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.about .content .btn {
+  display: inline-block;
+  background: #fff;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #2C3972;
+  border-radius: 0 15px;
+  text-shadow: none;
+}
+
+.about .content .btn:hover {
+  background: #d2d4df;
+}
+
+
+/*  ========================== section > exibitions ========================== */
+
+.exibitions .content {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.exibitions .content a {
+  overflow: hidden;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: .1rem .2rem .5rem gray;
+}
+
+.exibitions .content .image {
+  overflow: hidden;
+}
+
+.exibitions .content a:hover img {
+  transform: scale(1.1);
+}
+
+.exibitions .content a img {
+  width: 100%;
+  height: 20rem;
+}
+
+.exibitions .content .info {
+  padding: 15px 10px;
+  background: white;
+}
+
+.exibitions .content .info span {
+  display: block;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #000;
+}
+
+.exibitions .content .info .sub_title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.exibitions .btn_content {
+  margin-top: 30px;
+  text-align: end;
+}
+
+.exibitions .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #fff;
+  background: #2C3972;
+  border-radius: 0 15px;
+  text-shadow: none;
+}
+
+.exibitions .btn:hover {
+  background: #d2d4df;
+}
+
+
+/* ______________________ customers ______________________ */
+
+.customer-list {
+  padding: 40px;
+}
+
+.customer-list {
+  width: 100%;
+  overflow: hidden;
+}
+
+.customer-list .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  height: 130px;
+}
+
+.customer-list .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.customer-list .swiper-pagination {
+  position: relative;
+  margin-top: 10px;
+}
+
+.customer-list .swiper-button-next,
+.customer-list .swiper-button-prev {
+  color: #1677ff;
+}
+
+
+
+
+/* _____________________________ contact _________________________ */
+.contact {
+  padding: 70px 0 90px;
+  margin-bottom: 0;
+  background-image: url(../images/contact/contact-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact .title {
+  background: none;
+}
+
+.contact .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 20px 0;
+}
+
+.contact .social-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 250px;
+  color: #fff;
+}
+
+.contact .social-links a i {
+  font-size: 3rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 75px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.contact .social-links a i:hover {
+  background: #32374e;
+}
+
+.contact .social-links a .sub_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact .social-links a .descr {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+
+
+
+
+/* ___________________ media queries _________________________ */
+@media (max-width: 1150px) {
+
+  section.home {
+    padding: 15rem 0 5rem 10%;
+  }
+}
+
+@media (max-width: 1165px) {
+  .exibitions .content .info .sub_title {
+    font-size: 1.2rem;
+  }
+
+  .exibitions .content .info .descr {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width: 990px) {
+  .exibitions .content {
+    justify-content: center;
+  }
+
+  .exibitions .content a {
+    width: 48%;
+  }
+}
+
+@media (max-width: 940px) {
+  .products .product-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 660px) {
+  .exibitions .content a {
+    width: 100%;
+  }
+}
